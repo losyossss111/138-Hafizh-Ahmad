@@ -1,0 +1,182 @@
+h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 50px;
+    color: rgb(14, 129, 168);
+}
+
+body {
+    background-color: lightblue;
+}
+
+p {
+    color: pink;
+}
+
+.invitation-card {
+    width: 75%;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    padding: 20px;
+    background-image: url("bgwedding.jpeg");
+    box-shadow: 0 5px 10px black;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+}
+
+.container-custom {
+    width: 75%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-position: center;
+    margin: 0 auto;
+    display: block;
+    background-color: rgb(14, 129, 168);
+}
+
+.registrasi {
+    width: 75%;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.qr-code {
+    margin: 20px 0;
+    width: 80%;
+}
+
+.container-custom img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    border-radius: 12px;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn-primary {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .invitation-card,
+    .container-custom,
+    .registrasi {
+        width: 100%;
+    }
+
+    .container-custom {
+        padding: 15px;
+    }
+
+    .col-md-4 {
+        margin-bottom: 15px;
+    }
+
+    .btn-open {
+        padding: 13px 26px;
+        font-size: 16px;
+    }
+}
+
+#opening-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+    overflow-y: auto;
+
+    background-image: url("buket.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #222222;
+}
+
+.opening-content {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 20px;
+    color: #000000;
+}
+
+.opening-content h1,
+.opening-content p {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+.btn-open {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px 35px;
+    margin-top: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #fff1c1,
+        #d4af37,
+        #b8860b
+    );
+
+    color: #3b2a0a;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border: 1px solid #fff0b3;
+    border-radius: 50px;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.25),
+        inset 0 1px 2px rgba(255, 255, 255, 0.7);
+
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.btn-open:hover {
+    background: linear-gradient(
+        135deg,
+        #ffe9a3,
+        #f5d36a,
+        #c99a17
+    );
+
+    color: #3b2a0a;
+    transform: translateY(-3px) scale(1.04);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3),
+        0 0 15px rgba(245, 211, 106, 0.5);
+}
+
+.btn-open:active {
+    transform: scale(0.97);
+}
+
+.btn-open:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 5px;
+}
